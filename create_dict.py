@@ -1,9 +1,26 @@
+# Michelle Memelink
+# Iris Reijnen
+# bvvbin
+# 24-10-2020
+# ---------------------------------
+# CLI = Command Line Interface
+# ---------------------------------
+# Takes MSA file with sequences and count the amount of each
+# aminoacid on a specific position.
+# Writes this to a file and visualizes this in a pie chart.
+# ---------------------------------
+# To start the program, enter this command on the CLI.
+# Replace single quotes with own input.
+# python3 create_dict.py 'final_msa.aln' 'positie_nummer'
+
+
 import os
 from sys import argv
 import matplotlib.pyplot as plt
 
 
 def main():
+    # Command line interface command Ubuntu:
     # python3 create_dict.py "final_msa.aln" "positie_nummer"
     file1 = argv[1]
     pos = int(argv[2]) - 1
