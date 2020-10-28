@@ -38,9 +38,9 @@ def main():
                         dict_pos[seq[pos]] += 1
                 seq = ""
     plt.pie(dict_pos.values(), labels=dict_pos.keys(), autopct='%1.1f%%')
-    plt.title("Percentage gelezen aminozuur op positie twaalf van\n"+
-              "het CRYSTALLIN_BETA_GAMMA domein van eiwitfamilie Crystall.\n"
-              +"Alignment door MUSCLE met aangepaste E-value.")
+    plt.title("Percentage gelezen aminozuur op positie twaalf van het\n"+
+              "CRYSTALLIN_BETA_GAMMA domein van eiwitfamilie Crystall\n"
+              +"gealigneerd door MUSCLE met een E-value van 1.0e-20")
     plt.show()
 
 
