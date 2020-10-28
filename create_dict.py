@@ -30,7 +30,7 @@ def main():
     with open(file1, 'r') as file:
         for line in file:
             if not line.startswith(">"):
-                seq += line
+                seq += line.replace("\n", "")
             else:
                 if seq:
                     if seq[pos] not in dict_pos.keys():
