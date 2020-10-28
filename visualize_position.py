@@ -24,7 +24,6 @@ def main():
     # python3 create_dict.py "final_msa.aln" "positie_nummer"
     file1 = argv[1]
     pos = int(argv[2]) - 1
-    file2 = "dictionary_output_" + file1 + ".txt"
     dict_pos = {}
     seq = ""
     with open(file1, 'r') as file:
