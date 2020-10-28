@@ -43,6 +43,7 @@ def main():
     print(dict_pos)
     print("-" * 79)
     plt.pie(dict_pos.values(), labels=dict_pos.keys(), autopct='%1.1f%%')
+    plt.title("Test")
     plt.show()
 
 
