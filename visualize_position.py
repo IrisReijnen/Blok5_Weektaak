@@ -37,10 +37,6 @@ def main():
                     else:
                         dict_pos[seq[pos]] += 1
                 seq = ""
-    print("-" * 79)
-    print("Dictionary creation complete of position {}:".format(pos + 1))
-    print(dict_pos)
-    print("-" * 79)
     plt.pie(dict_pos.values(), labels=dict_pos.keys(), autopct='%1.1f%%')
     plt.title("Percentage gelezen aminozuur op positie twaalf van\n"+
               "het CRYSTALLIN_BETA_GAMMA domein van eiwitfamilie Crystall.\n"
