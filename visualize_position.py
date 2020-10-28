@@ -42,7 +42,9 @@ def main():
     print(dict_pos)
     print("-" * 79)
     plt.pie(dict_pos.values(), labels=dict_pos.keys(), autopct='%1.1f%%')
-    plt.title("Test")
+    plt.title("Percentage gelezen aminozuur op positie twaalf van\n"+
+              "het CRYSTALLIN_BETA_GAMMA domein van eiwitfamilie Crystall.\n"
+              +"Alignment door MUSCLE met aangepaste E-value.")
     plt.show()
 
 
